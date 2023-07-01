@@ -1,0 +1,14 @@
+.detail-product-container {
+  display: flex;
+  justify-content: center;
+  .product-detail {
+    display: flex;
+
+    width: 70%;
+
+    .img-description{
+    }
+    .price-detail{
+    }
+  }
+}
