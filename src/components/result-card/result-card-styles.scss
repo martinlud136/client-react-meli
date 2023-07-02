@@ -1,0 +1,36 @@
+.result-container{
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    height: 200px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    .result-image{
+        margin-left: 14px;
+        margin-right: 14px;
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+    }
+    .result-description-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        width: 60%;
+        .result-price-container{
+            display: flex;
+            font-size: 24px;
+            margin-bottom: 32px;
+            .result-price{
+                margin: 0px;
+                padding-left: 5px;
+            }
+        }
+    }
+    .result-city{
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}
