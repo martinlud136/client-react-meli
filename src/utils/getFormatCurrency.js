@@ -1,4 +1,4 @@
-export const getFormatCurrency = (currency)=>{
+export default function getFormatCurrency(currency){
     switch(currency){
         case "USD":
             return "U$S"

@@ -5,7 +5,7 @@ import { itemsContext } from "../../context/items.context";
 import BreadCrumb from "../../components/breadcrumb/Breadcrumb.component";
 import ResultCard from "../../components/result-card/Result-card.component";
 
-import { getFormatCurrency } from "../../utils/getFormatCurrency";
+import { getFormatCurrency } from "../../utils";
 
 import "./results.styles.scss";
 
