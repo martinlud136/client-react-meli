@@ -1,0 +1,23 @@
+.breadcrumb-container{
+margin-top: 16px;
+margin-bottom: 16px;
+}
+
+.breadcrumb-section {
+  font-size: 16;
+  display: inline-block;
+  color: #666666;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.breadcrumb-separator {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  color: #666666;
+  border-radius: 50%;
+  margin: 4px 10px;
+}

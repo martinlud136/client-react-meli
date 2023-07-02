@@ -1,6 +1,9 @@
 import { useContext, useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { itemsContext } from "../../context/items.context";
+
+import BreadCrumb from "../../components/Breadcrumb.component";
+
 import "./results.styles.scss";
 
 const Result = () => {
@@ -24,7 +27,7 @@ const Result = () => {
     <>
       {items.length && <div className="rescults-container">
         <div className="items-container">
-          <div className="breadcrumb">{categories}</div>
+          <BreadCrumb categories={categories}/>
           {items.map((item) => {
             return (
               <div key={item.id} onClick={() => handleCardClick(item)}>

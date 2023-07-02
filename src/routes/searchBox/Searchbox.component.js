@@ -10,7 +10,6 @@ const SearchBox = () => {
   const [text, setText] = useState("");
 
   const handleSearchText = (e) => {
-    console.log(e.type === "click");
     if (e.type === "click" || e.key === "Enter") {
       console.log("entra");
       navigate(`/items?search=${text}`);
