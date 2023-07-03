@@ -33,12 +33,12 @@ const DetailProduct = () => {
   return (
     <>
       {(Object.keys(item).length > 0) && (
-        <div className="detail-product-container">
+        <section className="detail-product-container">
           <div className="product-detail">
             <BreadCrumb categories={categories} />
             <div className="detail-card-container">
 
-              <div className="img-description-container">
+              <article className="img-description-container">
                 <img className="detail-img" src={picture} alt="product img" />
                 <div className="description-container">
                   <p className="description-title">
@@ -46,7 +46,7 @@ const DetailProduct = () => {
                   </p>
                   <p className="description-content">{description}</p>
                 </div>
-              </div>
+              </article>
 
               <div className="price-detail">
                 <label>{`${conditionFormated} - ${sold_quantity} vendidos`}</label>
@@ -60,7 +60,7 @@ const DetailProduct = () => {
 
             </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );

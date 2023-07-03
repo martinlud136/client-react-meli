@@ -15,7 +15,7 @@ const ResultCard = ({
     navigate(`/items/${id}`);
   };
   return (
-    <div className="result-container" onClick={() => handleCardClick(id)}>
+    <article className="result-container" onClick={() => handleCardClick(id)}>
       <img className="result-image" alt="imagen resultado" src={imgUrl} />
       <div className="result-description-container">
         <div className="result-price-container">
@@ -25,7 +25,7 @@ const ResultCard = ({
         <div className="result-description">{title}</div>
       </div>
       <span className="result-city">{city}</span>
-    </div>
+    </article>
   );
 };
 

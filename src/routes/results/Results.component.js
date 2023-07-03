@@ -23,7 +23,7 @@ const Result = () => {
   return (
     <>
       {(items.length > 0) && (
-        <div className="rescults-container">
+        <section className="rescults-container">
           <div className="items-container">
             <BreadCrumb categories={categories} />
             {items.map((item) => {
@@ -50,7 +50,7 @@ const Result = () => {
               );
             })}
           </div>
-        </div>
+        </section>
       )}
     </>
   );

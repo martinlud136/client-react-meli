@@ -23,7 +23,7 @@ const SearchBox = () => {
 
   return (
     <>
-      <div className="search-container">
+      <header className="search-container">
         <div className="input-container">
           <img src={meliLogo} alt="logo -meli" className="meli-logo" />
           <input
@@ -40,7 +40,7 @@ const SearchBox = () => {
             onClick={handleSearchText}
           />
         </div>
-      </div>
+      </header>
       <Outlet />
     </>
   );
