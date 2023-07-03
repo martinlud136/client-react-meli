@@ -32,7 +32,7 @@ const DetailProduct = () => {
   }, [id]);
   return (
     <>
-      {Object.keys(item).length && (
+      {(Object.keys(item).length > 0) && (
         <div className="detail-product-container">
           <div className="product-detail">
             <BreadCrumb categories={categories} />

@@ -22,7 +22,7 @@ const Result = () => {
 
   return (
     <>
-      {items.length && (
+      {(items.length > 0) && (
         <div className="rescults-container">
           <div className="items-container">
             <BreadCrumb categories={categories} />
