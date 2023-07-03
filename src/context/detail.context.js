@@ -11,7 +11,7 @@ export const ItemProvider = ({ children }) => {
  
 
   const fetchQueryItem= async(q)=>{
-    const response = await fetch(`http://localhost:3000/api/v1/items/${q}`)
+    const response = await fetch(`https://api-backend-meli.vercel.app/api/v1/items/${q}`)
     const data = await response.json()
     setItem(data.item)
   }

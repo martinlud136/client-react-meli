@@ -12,7 +12,7 @@ export const ItemsProviders = ({ children }) => {
   const [categories, setCategories] = useState([])
 
   const fetchQueryItems= async(q)=>{
-    const response = await fetch(`http://localhost:3000/api/v1/items?q=${q}`)
+    const response = await fetch(`https://api-backend-meli.vercel.app/api/v1/items?q=${q}`)
     const data = await response.json()
     setItems(data.items)
     setCategories(data.categories)
